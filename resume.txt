@@ -1,0 +1,64 @@
+SUSHIL SUNDAR RAMESH
+Chennai, India| P: +918610498521| bensushilrss@gmail.com | LinkedIn: https://www.linkedin.com/in/sushil-sundar-3247201bb/
+
+PROFESSIONAL SUMMARY
+Data Analyst with hands-on experience in machine learning, data analysis, and large-scale data validation across enterprise systems. Strong foundation in Python (pandas, numpy, scikit-learn), SQL, and statistical analysis, with proven ability to build predictive models and extract actionable insights. Experienced in working with structured and semi-structured data, performing feature engineering, and developing data-driven solutions. Actively leveraging AI tools to enhance data workflows and model development.
+
+WORK EXPERIENCE
+CSIRO (Commonwealth Scientific and Industrial Research Organisation) 	Australia
+Data Analyst Intern							  March 2024 – August 2024
+•	Analyzed structured datasets to identify patterns and trends supporting data-driven decision-making. 
+•	Built and evaluated machine learning models (classification & regression) using Python (pandas, numpy, scikit-learn) 
+•	Performed data cleaning, preprocessing, and feature engineering to improve model performance. 
+•	Conducted exploratory data analysis (EDA) and developed visualizations using Matplotlib and Seaborn 
+•	Applied statistical techniques to validate model outputs and improve prediction reliability. 
+•	Communicated insights through structured reports and visual summaries for stakeholders.
+INFOSYS LIMITED	Chennai, India
+Systems Engineer	March 2021 – June 2022
+•	Engineered and optimized complex SQL queries within SAP HANA environments to validate and reconcile large-scale transactional datasets, ensuring 99%+ data integrity across enterprise systems.
+•	Developed automated data validation pipelines using Java and Selenium, reducing manual verification time by 40% and ensuring reliable data movement for downstream analytics.
+•	Processed and transformed semi-structured API data (JSON/XML), performing backend mapping to relational schemas to support system behavior analysis and predictive modelling readiness.
+•	Applied statistical validation techniques to identify data inconsistencies, providing insights to improve data quality for decision-making.
+•	Contributed to CI/CD workflows by integrating automated data validation scripts into testing pipelines, improving deployment reliability and data consistencyUtilized 
+•	Advanced Excel and SQL for exploratory data analysis (EDA), generating comprehensive reports to support stakeholder data requirements.
+
+
+PROFESSIONAL SUMMARY
+Time Series Forecasting for Portfolio Optimization
+•	Developed a time series forecasting model using Facebook Prophet to predict financial trends 
+•	Performed data preprocessing, trend analysis, and seasonality decomposition 
+•	Applied forecasting techniques to support portfolio optimization strategies 
+•	Visualized predictions and confidence intervals using Matplotlib 
+•	Improved decision-making through data-driven forecasting insights
+Customer Churn Prediction (Machine Learning)
+•	Built classification models (Logistic Regression, Decision Tree, SVM) to predict customer churn 
+•	Performed feature engineering and data preprocessing to improve model accuracy 
+•	Conducted exploratory data analysis to identify key churn drivers 
+•	Evaluated model performance using standard metrics (accuracy, precision, recall)
+
+SKILLS
+Programming & Data
+•	Python (Pandas, NumPy, Scikit-learn) 
+•	SQL (MySQL, SAP HANA) 
+Machine Learning
+•	Supervised Learning (Regression, Classification)
+•	Unsupervised Learning (Clustering – K-Means)
+•	Model Evaluation & Feature Engineering, Scikit-learn, TensorFlow, PyTorch 
+Mathematical Foundations
+•	Probability & Statistics
+•	Linear Algebra (ML fundamentals)
+Data Analysis & Visualization
+•	Exploratory Data Analysis (EDA) 
+•	Matplotlib (Advanced), Seaborn 
+Tools & Technologies
+•	Jupyter Notebook, Git, Excel 
+•	REST APIs, JSON/XML data handling
+
+EDUCATION
+RMIT UNIVERSITY	Melbourne, VIC
+Master of Data Science	June 2022 – August 2024
+ANNA UNIVERSITY	Chennai, India
+Bachelor of Engineering – Computer Science Engineering	July 2016 – November 2020
+
+EMERGING SKILLS
+AI-assisted development (Claude, ChatGPT) , prompt engineering for data workflows, Automation of data analysis using AI tools
