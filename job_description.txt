@@ -1,0 +1,37 @@
+About the job
+We are seeking a highly analytical Data Analyst with strong experience in Agile environments and enterprise data ecosystems. The role focuses on translating business requirements into data-driven insights, supporting decision-making through structured analysis, and contributing to end-to-end analytical solutions.
+
+
+
+Key Responsibilities
+
+Identify, assess, and prepare data sources to support business and analytical requirements, including analysis of data availability, quality, and constraints
+Conduct stakeholder workshops to capture analytical use cases, reporting needs, KPIs, and decision requirements
+Profile, validate, and analyse data to identify trends, patterns, anomalies, and data quality issues
+Define and document analytical requirements, KPIs, metrics, business rules, and data logic
+Perform source-to-target mapping and support end-to-end data and reporting solution design
+Develop dashboards, reports, and visualisations to generate insights and support business decisions
+Manage analytics backlog including prioritisation of use cases, defining acceptance criteria, and aligning with business value
+Support demos, reviews, and proof-of-concept activities, presenting findings and incorporating stakeholder feedback
+Provide regular updates on progress, risks, dependencies, and data-related issues to project stakeholders
+Contribute to solution design documentation and knowledge transfer activities
+
+
+Key Requirements
+
+Strong understanding of data analysis principles including data profiling, EDA, KPI definition, and data modelling concepts
+Experience working with complex enterprise data environments, including data quality, integration, and technical constraints
+Proven ability to translate business questions into analytical requirements and actionable insights
+Hands-on experience with Agile delivery and tools such as Jira, Azure DevOps (ADO), or similar
+Experience managing analytics backlogs, refining use cases, and prioritising work based on business value
+Strong problem-solving skills with ability to identify root causes and data-driven recommendations
+Understanding of data governance, security, and privacy including role-based access and sensitive data handling
+Excellent communication skills with the ability to explain complex data concepts to both technical and non-technical stakeholders
+Ability to work independently in fast-paced environments and manage competing priorities
+
+
+Nice to Have
+
+Experience with dashboards and visualisation tools (Power BI, Tableau, etc.)
+Exposure to data modelling, data warehousing, or analytics platforms
+Experience contributing to solution design documentation
