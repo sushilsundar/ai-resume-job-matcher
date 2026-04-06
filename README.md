@@ -118,18 +118,28 @@ Upcoming improvements include structured scoring logic, enhanced prompt design, 
 
 ## Sample Output
 
+```json
 {
-  "match_score": 75,
+  "match_score": 85,
   "strengths": [
-    "Strong Python and data analysis skills"
+    "Strong Python skills with Pandas, NumPy, and Scikit-learn",
+    "Experience in machine learning including classification and regression models",
+    "Proficient in SQL including SAP HANA and query optimization"
   ],
   "missing_skills": [
-    "Agile methodologies"
+    "Experience with cloud platforms (AWS, Azure, GCP)",
+    "Big data technologies such as Hadoop or Spark",
+    "Dashboarding tools like Power BI or Tableau"
   ],
   "improvements": [
-    "Add dashboarding experience (Power BI/Tableau)"
+    "Add measurable impact metrics to projects",
+    "Highlight team collaboration and Agile experience",
+    "Include relevant certifications"
   ]
 }
+```
+
+
 
 ---
 
