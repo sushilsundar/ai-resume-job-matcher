@@ -14,6 +14,10 @@ This project addresses that gap by offering a clear comparison between a resume 
 
 ---
 
+## Demo
+
+![App Screenshot](screenshot.png)
+
 ## Features
 
 * Resume analysis based on industry expectations
@@ -21,7 +25,8 @@ This project addresses that gap by offering a clear comparison between a resume 
 * Match score estimation
 * Identification of missing or weak skill areas
 * Targeted suggestions to improve alignment
-* Structured JSON output for consistent analysis
+* User-friendly display of results optimised JSON output
+* Interactive UI using Streamlit
 
 ---
 
@@ -63,21 +68,34 @@ ai-resume-job-matcher/
 ## Setup & Run
 
 1. Clone the repository
-2. Set your OpenAI API key as an environment variable:
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Set your OpenAI API key as an environment variable:
 
 ```bash
 export OPENAI_API_KEY="your_api_key_here"
 ```
 
-3. Add your files:
+4. Add your input files:
 
 * `resume.txt`
 * `job_description.txt`
 
-4. Run the application:
+5. Run the CLI version:
 
 ```bash
 python app.py
+```
+
+6. Run the UI (recommended):
+
+```bash
+streamlit run streamlit_app.py
 ```
 
 ---

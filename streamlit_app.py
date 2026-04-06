@@ -6,9 +6,17 @@ from openai import OpenAI
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.title("AI Resume Job Matcher")
+st.markdown("### Analyze your resume against a job description")
 
-resume = st.text_area("Paste Resume here")
-job_description = st.text_area("Paste Job Description here")
+col1, col2 = st.columns(2)
+
+with col1:
+    resume = st.text_area("Resume", height=300)
+
+with col2:
+    job_description = st.text_area("Job Description", height=300)
+    
+st.markdown("---")
 
 if st.button("Analyze"):
     
@@ -63,13 +71,16 @@ if st.button("Analyze"):
             st.write(data["match_score"])
 
             st.subheader("Strengths")
-            st.write(data["strengths"])
+            for item in data.get("strengths", []):
+                st.success(f"✔ {item}")
 
             st.subheader("Missing Skills")
-            st.write(data["missing_skills"])
+            for item in data.get("missing_skills", []):
+                st.error(f"✘ {item}")
 
             st.subheader("Improvements")
-            st.write(data["improvements"])
+            for item in data.get("improvements", []):
+                st.info(f"➤ {item}")
 
         except:
             st.error("Error parsing response")
