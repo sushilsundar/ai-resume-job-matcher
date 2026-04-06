@@ -21,6 +21,7 @@ This project addresses that gap by offering a clear comparison between a resume 
 * Match score estimation
 * Identification of missing or weak skill areas
 * Targeted suggestions to improve alignment
+* Structured JSON output for consistent analysis
 
 ---
 
@@ -99,19 +100,18 @@ Upcoming improvements include structured scoring logic, enhanced prompt design, 
 
 ## Sample Output
 
-Match Score: 75/100
-
-Key Strengths:
-- Strong Python and data analysis skills
-- Experience with machine learning models
-
-Missing Skills:
-- Agile methodologies
-- BI tools (Power BI, Tableau)
-
-Improvements:
-- Add project experience with dashboards
-- Highlight Agile workflow exposure
+{
+  "match_score": 75,
+  "strengths": [
+    "Strong Python and data analysis skills"
+  ],
+  "missing_skills": [
+    "Agile methodologies"
+  ],
+  "improvements": [
+    "Add dashboarding experience (Power BI/Tableau)"
+  ]
+}
 
 ---
 
