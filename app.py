@@ -1,4 +1,5 @@
 import os
+import json
 from openai import OpenAI
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -16,11 +17,21 @@ You are a senior recruiter and ATS system.
 
 Compare the candidate's resume with the job description.
 
-Give:
-1. Match score (out of 100)
-2. Key matching strengths
-3. Missing skills (important)
-4. Specific improvements to increase match
+Return ONLY valid JSON in this format:
+
+{{
+  "match_score": number,
+  "strengths": [list],
+  "missing_skills": [list],
+  "improvements": [list]
+}}
+
+Rules:
+- match_score must be between 0 and 100
+- strengths: max 5 points
+- missing_skills: max 5 points
+- improvements: max 5 points
+- No explanations outside JSON
 
 
 Resume:
@@ -37,4 +48,16 @@ response = client.chat.completions.create(
     ]
 )
 
-print(response.choices[0].message.content)
+output = response.choices[0].message.content
+
+# Clean markdown formatting if present
+if output.startswith("```"):
+    output = output.strip("```json").strip("```").strip()
+
+# Parse JSON safely
+try:
+    data = json.loads(output)
+    print(json.dumps(data, indent=2))
+except:
+    print("Error parsing JSON. Raw output:\n")
+    print(output)

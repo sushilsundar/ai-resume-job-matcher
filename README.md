@@ -97,6 +97,24 @@ Upcoming improvements include structured scoring logic, enhanced prompt design, 
 
 ---
 
+## Sample Output
+
+Match Score: 75/100
+
+Key Strengths:
+- Strong Python and data analysis skills
+- Experience with machine learning models
+
+Missing Skills:
+- Agile methodologies
+- BI tools (Power BI, Tableau)
+
+Improvements:
+- Add project experience with dashboards
+- Highlight Agile workflow exposure
+
+---
+
 ## Author
 
 Sushil Sundar
