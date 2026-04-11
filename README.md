@@ -38,6 +38,27 @@ This project addresses that gap by offering a clear comparison between a resume 
 
 ---
 
+## Architecture Evolution
+
+The system is evolving from a purely LLM-based approach to a hybrid architecture:
+
+### Phase 1 (Completed)
+- LLM-based resume-job matching
+- Structured JSON outputs
+- Streamlit UI
+
+### Phase 2 (In Progress)
+- Feature Extraction Layer (deterministic)
+- Rule-Based Scoring
+- Hybrid scoring (LLM + rules)
+
+This evolution improves:
+- Consistency across runs
+- Explainability of scores
+- Production readiness
+
+---
+
 ## Project Structure
 
 ```
@@ -51,17 +72,62 @@ ai-resume-job-matcher/
 
 ---
 
+## Feature Extraction Layer
+
+This module extracts structured information from resumes and job descriptions.
+
+### Extracted Features:
+- Skills (predefined tech stack matching)
+- Years of experience (regex-based heuristic)
+- Keywords (basic text extraction)
+
+This layer enables deterministic scoring and supports hybrid evaluation.
+
+---
+
+## Rule-Based Scoring
+
+Introduced a deterministic scoring mechanism based on:
+
+- Skill overlap (primary signal)
+- Keyword similarity (supporting signal)
+- Experience match
+
+A weighted score is computed to provide a consistent baseline independent of LLM responses.
+
+---
+
 ## How It Works
 
-1. The application reads resume content from a text file
-2. It reads a job description provided by the user
-3. Both inputs are sent to an AI model for analysis
-4. The system returns:
+The system follows a multi-stage pipeline:
 
-   * Match score
-   * Key strengths
-   * Missing skills
-   * Suggested improvements
+1. **Input Processing**
+   - Reads resume and job description from text files
+
+2. **Feature Extraction Layer**
+   - Extracts structured data:
+     - Skills
+     - Years of experience (heuristic)
+     - Keywords
+
+3. **LLM-Based Analysis**
+   - Uses OpenAI API to generate:
+     - Match score
+     - Strengths
+     - Gaps
+     - Improvements
+
+4. **(New) Rule-Based Scoring**
+   - Computes deterministic scores using:
+     - Skill overlap
+     - Keyword similarity
+     - Experience match
+
+5. **(Upcoming) Hybrid Scoring**
+   - Combines LLM + rule-based scores for improved reliability and consistency
+
+6. **Output**
+   - Structured JSON response displayed via Streamlit UI
 
 ---
 
@@ -102,17 +168,27 @@ streamlit run streamlit_app.py
 
 ## Current Status
 
-This project is under active development.
-Upcoming improvements include structured scoring logic, enhanced prompt design, and a user interface.
+This project is actively evolving into a production-grade system.
+
+Recent updates:
+- Feature extraction layer implemented
+- Rule-based scoring introduced
+- Hybrid scoring architecture in progress
+
+Next steps:
+- Embedding-based similarity
+- Improved explainability
+- Deployment readiness
 
 ---
 
 ## Future Enhancements
 
-* Streamlit-based UI
-* Support for PDF/DOCX resumes
-* Improved ATS-style scoring system
-* Deployment as a web application
+- Embedding-based similarity scoring
+- Advanced NLP-based feature extraction (NER, skill parsing)
+- Weight tuning and evaluation metrics
+- Support for PDF/DOCX resumes
+- Full-stack deployment
 
 ---
 
